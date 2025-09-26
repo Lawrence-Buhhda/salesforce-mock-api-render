@@ -7,7 +7,7 @@
     "start": "mockoon start --data https://raw.githubusercontent.com/Lawrence-Buhhda/salesforce-mock-api-render/master/mock-api.json --port 10000"
   },
   "dependencies": {
-    "@mockoon/cli": "^7.4.0"
+    "@mockoon/cli": "^7.0.0"
   },
   "keywords": ["mock", "api", "salesforce"],
   "author": "Lawrence Kuang",
