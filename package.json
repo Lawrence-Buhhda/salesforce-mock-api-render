@@ -1,0 +1,15 @@
+{
+  "name": "salesforce-mock-api",
+  "version": "1.0.0",
+  "description": "Mock API for Salesforce testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "mockoon start --data https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/mock-api.json --port 10000"
+  },
+  "dependencies": {
+    "@mockoon/cli": "^7.4.0"
+  },
+  "keywords": ["mock", "api", "salesforce"],
+  "author": "Your Name",
+  "license": "MIT"
+}
