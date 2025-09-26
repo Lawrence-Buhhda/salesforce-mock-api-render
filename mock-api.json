@@ -1,0 +1,156 @@
+{
+    "uuid": "4fc5c9b2-20cb-4aa0-8bcf-2ffbf4943e22",
+    "lastMigration": 33,
+    "name": "MyMockEnv",
+    "endpointPrefix": "",
+    "latency": 0,
+    "port": 3001,
+    "hostname": "",
+    "folders": [],
+    "routes": [
+        {
+            "uuid": "cb14218a-d141-46b4-95ea-920262ed2b53",
+            "type": "http",
+            "documentation": "get products",
+            "method": "get",
+            "endpoint": "products",
+            "responses": [
+                {
+                    "uuid": "30f420c7-106b-4df0-92c0-1ae43f211b1f",
+                    "body": "{\r\n  \"products\": [\r\n    {\r\n      \"id\": \"prod_001\",\r\n      \"sku\": \"TSH-WHT-M\",\r\n      \"name\": \"Classic White T-Shirt\",\r\n      \"description\": \"Premium 100% cotton t-shirt with a classic fit. Perfect for everyday wear.\",\r\n      \"price\": 29.99,\r\n      \"originalPrice\": 39.99,\r\n      \"currency\": \"USD\",\r\n      \"category\": {\r\n        \"id\": \"cat_1\",\r\n        \"name\": \"Clothing\"\r\n      },\r\n      \"brand\": \"Fashion Basics\",\r\n      \"images\": [\r\n        \"https://example.com/images/tshirt-white-1.jpg\",\r\n        \"https://example.com/images/tshirt-white-2.jpg\"\r\n      ],\r\n      \"inStock\": true,\r\n      \"stockQuantity\": 150,\r\n      \"variants\": [\r\n        {\r\n          \"size\": \"S\",\r\n          \"color\": \"White\",\r\n          \"stock\": 45\r\n        },\r\n        {\r\n          \"size\": \"M\",\r\n          \"color\": \"White\",\r\n          \"stock\": 60\r\n        },\r\n        {\r\n          \"size\": \"L\",\r\n          \"color\": \"White\",\r\n          \"stock\": 45\r\n        }\r\n      ],\r\n      \"rating\": 4.5,\r\n      \"reviewCount\": 128,\r\n      \"tags\": [\"cotton\", \"basic\", \"casual\"],\r\n      \"weight\": 0.2,\r\n      \"dimensions\": {\r\n        \"length\": 20,\r\n        \"width\": 15,\r\n        \"height\": 2\r\n      },\r\n      \"isActive\": true,\r\n      \"createdAt\": \"2023-10-15T08:30:00Z\",\r\n      \"updatedAt\": \"2024-01-20T14:25:00Z\"\r\n    },\r\n    {\r\n      \"id\": \"prod_002\",\r\n      \"sku\": \"HP-BT-NC\",\r\n      \"name\": \"Wireless Bluetooth Headphones\",\r\n      \"description\": \"High-quality noise cancelling headphones with 20-hour battery life.\",\r\n      \"price\": 89.99,\r\n      \"originalPrice\": 119.99,\r\n      \"currency\": \"USD\",\r\n      \"category\": {\r\n        \"id\": \"cat_2\",\r\n        \"name\": \"Electronics\"\r\n      },\r\n      \"brand\": \"AudioTech\",\r\n      \"images\": [\r\n        \"https://example.com/images/headphones-1.jpg\",\r\n        \"https://example.com/images/headphones-2.jpg\"\r\n      ],\r\n      \"inStock\": true,\r\n      \"stockQuantity\": 75,\r\n      \"variants\": [\r\n        {\r\n          \"color\": \"Black\",\r\n          \"stock\": 45\r\n        },\r\n        {\r\n          \"color\": \"White\",\r\n          \"stock\": 30\r\n        }\r\n      ],\r\n      \"rating\": 4.8,\r\n      \"reviewCount\": 256,\r\n      \"tags\": [\"wireless\", \"bluetooth\", \"noise-cancelling\"],\r\n      \"weight\": 0.3,\r\n      \"dimensions\": {\r\n        \"length\": 18,\r\n        \"width\": 15,\r\n        \"height\": 7\r\n      },\r\n      \"isActive\": true,\r\n      \"createdAt\": \"2023-11-05T10:15:00Z\",\r\n      \"updatedAt\": \"2024-01-18T09:40:00Z\"\r\n    }\r\n  ],\r\n  \"pagination\": {\r\n    \"total\": 2,\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"hasMore\": false\r\n  }\r\n}\r\n",
+                    "latency": 1000,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "fc6320b0-1adf-4ed2-8328-9fc1a22e2d78",
+            "type": "http",
+            "documentation": "",
+            "method": "get",
+            "endpoint": "login",
+            "responses": [
+                {
+                    "uuid": "22d2b39e-8991-47fe-9cea-d9a16b5c1d46",
+                    "body": "{\n  \"error\": \"Unauthorized\",\n  \"message\": \"Invalid credentials or token\",\n  \"statusCode\": 401\n}",
+                    "latency": 0,
+                    "statusCode": 401,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "33ad55b2-2738-418a-bb20-673a3f9897aa",
+                    "body": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\",\n  \"expires_in\": 3600,\n  \"user\": {\n    \"id\": \"1234567890\",\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\"\n  }\n}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "body",
+                            "modifier": "",
+                            "value": "{  email: \"john_doe@qq.com\",  password: \"success\"}",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        }
+    ],
+    "rootChildren": [
+        {
+            "type": "route",
+            "uuid": "cb14218a-d141-46b4-95ea-920262ed2b53"
+        },
+        {
+            "type": "route",
+            "uuid": "fc6320b0-1adf-4ed2-8328-9fc1a22e2d78"
+        }
+    ],
+    "proxyMode": true,
+    "proxyHost": "https://fakestoreapi.com/",
+    "proxyRemovePrefix": false,
+    "tlsOptions": {
+        "enabled": false,
+        "type": "CERT",
+        "pfxPath": "",
+        "certPath": "",
+        "keyPath": "",
+        "caPath": "",
+        "passphrase": ""
+    },
+    "cors": true,
+    "headers": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+        },
+        {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+        },
+        {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+        }
+    ],
+    "proxyReqHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "proxyResHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "data": [],
+    "callbacks": []
+}
