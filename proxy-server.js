@@ -80,5 +80,5 @@ app.listen(PORT, () => {
   console.log(`🚀 Proxy server running on port ${PORT}`);
   console.log(`📍 Local: http://localhost:${PORT}`);
   console.log(`👥 Users endpoint: http://localhost:${PORT}/users`);
-  console.log(`📊 Health check: http://localhost:${PT}/health`);
+  console.log(`📊 Health check: http://localhost:${PORT}/health`);
 });
