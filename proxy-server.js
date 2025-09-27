@@ -5,6 +5,9 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 10000;
 
+const https = require('https');
+const dns = require('dns');
+
 app.use(cors());
 
 // 模拟用户数据（备用数据）
@@ -74,6 +77,78 @@ app.get('/', (req, res) => {
     }
   });
 });
+
+// 诊断端点
+app.get('/diagnose', async (req, res) => {
+  const results = {
+    timestamp: new Date().toISOString(),
+    tests: []
+  };
+  // 测试1: DNS 解析
+  try {
+    const addresses = await new Promise((resolve, reject) => {
+      dns.resolve4('fakestoreapi.com', (err, addresses) => {
+        if (err) reject(err);
+        else resolve(addresses);
+      });
+    });
+    results.tests.push({
+      test: 'DNS Resolution',
+      status: 'success',
+      addresses: addresses
+    });
+  } catch (error) {
+    results.tests.push({
+      test: 'DNS Resolution',
+      status: 'failed',
+      error: error.message
+    });
+  }
+  // 测试2: TCP 连接测试
+  try {
+    const tcpResult = await new Promise((resolve) => {
+      const req = https.request({
+        hostname: 'fakestoreapi.com',
+        port: 443,
+        method: 'HEAD',
+        timeout: 5000
+      }, (response) => {
+        resolve({
+          status: 'success',
+          statusCode: response.statusCode,
+          headers: response.headers
+        });
+      });
+      req.on('error', (error) => {
+        resolve({
+          status: 'failed',
+          error: error.message
+        });
+      });
+      req.on('timeout', () => {
+        resolve({
+          status: 'failed',
+          error: 'Connection timeout'
+        });
+      });
+      req.end();
+    });
+    results.tests.push({
+      test: 'TCP Connection',
+      status: tcpResult.status,
+      ...tcpResult
+    });
+  } catch (error) {
+    results.tests.push({
+      test: 'TCP Connection',
+      status: 'failed',
+      error: error.message
+    });
+  }
+  res.json(results);
+});
+
+
 
 // 启动服务器
 app.listen(PORT, () => {
