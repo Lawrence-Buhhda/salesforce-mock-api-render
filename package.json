@@ -2,18 +2,12 @@
   "name": "salesforce-mock-api",
   "version": "1.0.0",
   "description": "Mock API for Salesforce testing",
-  "main": "proxy-server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node proxy-server.js",
-    "mockoon": "mockoon-cli start --data mock-api.json --port 10000",
-    "dev": "concurrently \"npm run mockoon\" \"npm start\""
+    "start": "mockoon-cli start --data mock-api.json --port 10000"
   },
   "dependencies": {
-    "@mockoon/cli": "^9.2.0",
-    "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6",
-    "cors": "^2.8.5",
-    "concurrently": "^8.2.2"
+    "@mockoon/cli": "^9.2.0"
   },
   "keywords": ["mock", "api", "salesforce"],
   "author": "Lawrence Kuang",
