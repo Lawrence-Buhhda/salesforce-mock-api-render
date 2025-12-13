@@ -17,7 +17,7 @@
             "responses": [
                 {
                     "uuid": "30f420c7-106b-4df0-92c0-1ae43f211b1f",
-                    "body": "{\r\n  \"products\": [\r\n    {\r\n      \"id\": \"prod_001\",\r\n      \"sku\": \"TSH-WHT-M\",\r\n      \"name\": \"Classic White T-Shirt\",\r\n      \"description\": \"Premium 100% cotton t-shirt with a classic fit. Perfect for everyday wear.\",\r\n      \"price\": 29.99,\r\n      \"originalPrice\": 39.99,\r\n      \"currency\": \"USD\",\r\n      \"category\": {\r\n        \"id\": \"cat_1\",\r\n        \"name\": \"Clothing\"\r\n      },\r\n      \"brand\": \"Fashion Basics\",\r\n      \"images\": [\r\n        \"https://example.com/images/tshirt-white-1.jpg\",\r\n        \"https://example.com/images/tshirt-white-2.jpg\"\r\n      ],\r\n      \"inStock\": true,\r\n      \"stockQuantity\": 150,\r\n      \"variants\": [\r\n        {\r\n          \"size\": \"S\",\r\n          \"color\": \"White\",\r\n          \"stock\": 45\r\n        },\r\n        {\r\n          \"size\": \"M\",\r\n          \"color\": \"White\",\r\n          \"stock\": 60\r\n        },\r\n        {\r\n          \"size\": \"L\",\r\n          \"color\": \"White\",\r\n          \"stock\": 45\r\n        }\r\n      ],\r\n      \"rating\": 4.5,\r\n      \"reviewCount\": 128,\r\n      \"tags\": [\"cotton\", \"basic\", \"casual\"],\r\n      \"weight\": 0.2,\r\n      \"dimensions\": {\r\n        \"length\": 20,\r\n        \"width\": 15,\r\n        \"height\": 2\r\n      },\r\n      \"isActive\": true,\r\n      \"createdAt\": \"2023-10-15T08:30:00Z\",\r\n      \"updatedAt\": \"2024-01-20T14:25:00Z\"\r\n    },\r\n    {\r\n      \"id\": \"prod_002\",\r\n      \"sku\": \"HP-BT-NC\",\r\n      \"name\": \"Wireless Bluetooth Headphones\",\r\n      \"description\": \"High-quality noise cancelling headphones with 20-hour battery life.\",\r\n      \"price\": 89.99,\r\n      \"originalPrice\": 119.99,\r\n      \"currency\": \"USD\",\r\n      \"category\": {\r\n        \"id\": \"cat_2\",\r\n        \"name\": \"Electronics\"\r\n      },\r\n      \"brand\": \"AudioTech\",\r\n      \"images\": [\r\n        \"https://example.com/images/headphones-1.jpg\",\r\n        \"https://example.com/images/headphones-2.jpg\"\r\n      ],\r\n      \"inStock\": true,\r\n      \"stockQuantity\": 75,\r\n      \"variants\": [\r\n        {\r\n          \"color\": \"Black\",\r\n          \"stock\": 45\r\n        },\r\n        {\r\n          \"color\": \"White\",\r\n          \"stock\": 30\r\n        }\r\n      ],\r\n      \"rating\": 4.8,\r\n      \"reviewCount\": 256,\r\n      \"tags\": [\"wireless\", \"bluetooth\", \"noise-cancelling\"],\r\n      \"weight\": 0.3,\r\n      \"dimensions\": {\r\n        \"length\": 18,\r\n        \"width\": 15,\r\n        \"height\": 7\r\n      },\r\n      \"isActive\": true,\r\n      \"createdAt\": \"2023-11-05T10:15:00Z\",\r\n      \"updatedAt\": \"2024-01-18T09:40:00Z\"\r\n    }\r\n  ],\r\n  \"pagination\": {\r\n    \"total\": 2,\r\n    \"limit\": 20,\r\n    \"offset\": 0,\r\n    \"hasMore\": false\r\n  }\r\n}\r\n",
+                    "body": "{\n  \"products\": [\n    {\n      \"id\": \"prod_001\",\n      \"sku\": \"TSH-WHT-M\",\n      \"name\": \"Classic White T-Shirt\",\n      \"description\": \"Premium 100% cotton t-shirt with a classic fit. Perfect for everyday wear.\",\n      \"price\": 29.99,\n      \"originalPrice\": 39.99,\n      \"currency\": \"USD\",\n      \"category\": {\n        \"id\": \"cat_1\",\n        \"name\": \"Clothing\"\n      },\n      \"brand\": \"Fashion Basics\",\n      \"images\": [\n        \"https://example.com/images/tshirt-white-1.jpg\",\n        \"https://example.com/images/tshirt-white-2.jpg\"\n      ],\n      \"inStock\": true,\n      \"stockQuantity\": 150,\n      \"variants\": [\n        {\n          \"size\": \"S\",\n          \"color\": \"White\",\n          \"stock\": 45\n        },\n        {\n          \"size\": \"M\",\n          \"color\": \"White\",\n          \"stock\": 60\n        },\n        {\n          \"size\": \"L\",\n          \"color\": \"White\",\n          \"stock\": 45\n        }\n      ],\n      \"rating\": 4.5,\n      \"reviewCount\": 128,\n      \"tags\": [\"cotton\", \"basic\", \"casual\"],\n      \"weight\": 0.2,\n      \"dimensions\": {\n        \"length\": 20,\n        \"width\": 15,\n        \"height\": 2\n      },\n      \"isActive\": true,\n      \"createdAt\": \"2023-10-15T08:30:00Z\",\n      \"updatedAt\": \"2024-01-20T14:25:00Z\"\n    },\n    {\n      \"id\": \"prod_002\",\n      \"sku\": \"HP-BT-NC\",\n      \"name\": \"Wireless Bluetooth Headphones\",\n      \"description\": \"High-quality noise cancelling headphones with 20-hour battery life.\",\n      \"price\": 89.99,\n      \"originalPrice\": 119.99,\n      \"currency\": \"USD\",\n      \"category\": {\n        \"id\": \"cat_2\",\n        \"name\": \"Electronics\"\n      },\n      \"brand\": \"AudioTech\",\n      \"images\": [\n        \"https://example.com/images/headphones-1.jpg\",\n        \"https://example.com/images/headphones-2.jpg\"\n      ],\n      \"inStock\": true,\n      \"stockQuantity\": 75,\n      \"variants\": [\n        {\n          \"color\": \"Black\",\n          \"stock\": 45\n        },\n        {\n          \"color\": \"White\",\n          \"stock\": 30\n        }\n      ],\n      \"rating\": 4.8,\n      \"reviewCount\": 256,\n      \"tags\": [\"wireless\", \"bluetooth\", \"noise-cancelling\"],\n      \"weight\": 0.3,\n      \"dimensions\": {\n        \"length\": 18,\n        \"width\": 15,\n        \"height\": 7\n      },\n      \"isActive\": true,\n      \"createdAt\": \"2023-11-05T10:15:00Z\",\n      \"updatedAt\": \"2024-01-18T09:40:00Z\"\n    }\n  ],\n  \"pagination\": {\n    \"total\": 2,\n    \"limit\": 20,\n    \"offset\": 0,\n    \"hasMore\": false\n  }\n}\n",
                     "latency": 1000,
                     "statusCode": 200,
                     "label": "",
@@ -26,11 +26,46 @@
                     "filePath": "",
                     "databucketID": "",
                     "sendFileAsBody": false,
-                    "rules": [],
+                    "rules": [
+                        {
+                            "target": "query",
+                            "modifier": "subscription_key",
+                            "value": "123456",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
                     "rulesOperator": "OR",
                     "disableTemplating": false,
                     "fallbackTo404": false,
                     "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "f6610b8d-ec67-4320-9c15-bdabfb5174bf",
+                    "body": "{\n  \"error\": \"Unauthorized\"\n}",
+                    "latency": 0,
+                    "statusCode": 401,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "query",
+                            "modifier": "subscription_key",
+                            "value": "123456",
+                            "invert": true,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
                     "crudKey": "id",
                     "callbacks": []
                 }
